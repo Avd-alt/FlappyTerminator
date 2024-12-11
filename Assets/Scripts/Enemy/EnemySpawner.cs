@@ -26,10 +26,10 @@ public class EnemySpawner : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(GeneratePipes());
+        StartCoroutine(GenerateEnemies());
     }
 
-    public void ClearEnemys()
+    public void ClearEnemies()
     {
         foreach (Enemy enemy in _enemies)
         {
@@ -39,7 +39,7 @@ public class EnemySpawner : MonoBehaviour
         _enemies.Clear();
     }
 
-    private IEnumerator GeneratePipes()
+    private IEnumerator GenerateEnemies()
     {
 
         while (enabled)

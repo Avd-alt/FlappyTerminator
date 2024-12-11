@@ -40,5 +40,4 @@ public class Bird : MonoBehaviour
             GameOver?.Invoke();
         }
     }
-
 }
